@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { SecondaryComponent } from './secondary/secondary.component';
+import { ApiServiceService } from './api-service.service';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { SecondaryComponent } from './secondary/secondary.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+    providers: [ ApiServiceService],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
